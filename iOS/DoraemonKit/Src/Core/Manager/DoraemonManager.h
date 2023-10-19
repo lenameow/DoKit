@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DoraemonEntryWindow.h"
 #import <UIKit/UIKit.h>
 
 
@@ -175,6 +176,7 @@ typedef NS_ENUM(NSUInteger, DoraemonManagerPluginType) {
 /// DoKit 支持的旋转方向
 @property (assign, nonatomic) UIInterfaceOrientationMask supportedInterfaceOrientations;
 
+@property (nonatomic, strong, readonly) DoraemonEntryWindow *entryWindow;
 
 - (void)configEntryBtnBlingWithText:(nullable NSString *)text backColor:(nullable UIColor *)backColor;
 @end
